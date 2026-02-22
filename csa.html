@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSA Program | Cedar Hollow Organics</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Cedar Hollow Organics</h1>
+    <nav>
+      <button class="menu-toggle" aria-label="Menu">&#9776;</button>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="csa.html">CSA</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="csa-hero">
+    <h2>Community Supported Agriculture (CSA)</h2>
+  </section>
+
+  <section class="csa-info">
+    <p>Our CSA members receive the freshest organic produce each week. Every box includes a mix of seasonally available vegetables and fruits grown right here on our farm.</p>
+    <p>Membership fees help us plan and sustain operations throughout the year and ensure you always receive top-quality food directly from our fields to your table.</p>
+    <img src="images/vegetable_variety.jpeg" alt="Variety of fresh organic vegetables" />
+    <a href="#" class="button">Sign Up Now</a>
+  </section>
+
+  <footer>
+    <p>© 2026 Cedar Hollow Organics | Polk County, FL</p>
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navList = document.querySelector('.nav-list');
+    menuToggle.addEventListener('click', () => {
+      navList.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

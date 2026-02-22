@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farm Events | Cedar Hollow Organics</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Cedar Hollow Organics</h1>
+    <nav>
+      <button class="menu-toggle" aria-label="Menu">&#9776;</button>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="csa.html">CSA</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="events-hero">
+    <h2>Farm Events & Educational Workshops</h2>
+  </section>
+
+  <section class="events-section">
+    <p>Join us for a variety of seasonal events throughout the year. From harvest festivals to gardening and composting classes, there’s something for everyone to enjoy.</p>
+    <img src="images/workshop.jpeg" alt="Farm workshop with community members" />
+    <ul style="max-width:700px;margin:auto;text-align:left;">
+      <li>🌻 Spring Planting Workshop – March 22</li>
+      <li>🍓 Summer Harvest Festival – July 14</li>
+      <li>🍂 Autumn Organic Cooking Class – October 9</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2026 Cedar Hollow Organics | Polk County, FL</p>
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navList = document.querySelector('.nav-list');
+    menuToggle.addEventListener('click', () => {
+      navList.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

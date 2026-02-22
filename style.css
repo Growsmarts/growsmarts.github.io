@@ -1,0 +1,238 @@
+/* === Base Styles === */
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  background-color: #3B6B35;
+  color: #f7f2f2;
+  line-height: 1.6;
+}
+
+/* === Header & Navigation === */
+header {
+  background: #3B6B35;
+  color: rgb(19, 238, 84);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+header h1 {
+  font-family: "Lora", serif;
+  font-size: 1.8em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+}
+
+nav a {
+  color: rgb(19, 238, 84);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #450ae6;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: rgb(19, 238, 84);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* === Hero Sections === */
+.hero,
+.about-hero,
+.csa-hero,
+.events-hero,
+.contact-hero {
+  color: #f7f2f2;
+  text-align: center;
+  padding: 6rem 1rem;
+}
+
+.hero {
+  background: url("images/hero_image.jpeg") center/cover no-repeat;
+}
+
+.about-hero {
+  background: url("images/about_us.jpeg") center/cover no-repeat;
+}
+
+.csa-hero {
+  background: url("images/csa_program.jpeg") center/cover no-repeat;
+}
+
+.events-hero {
+  background: url("images/events.jpeg") center/cover no-repeat;
+}
+
+.contact-hero {
+  background: url("images/contact.jpeg") center/cover no-repeat;
+}
+
+.hero h2,
+.about-hero h2,
+.csa-hero h2,
+.events-hero h2,
+.contact-hero h2 {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.8rem 1.2rem;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* === Main Content Sections === */
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  padding: 3rem;
+}
+
+main section {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+main section h3 {
+  color: #f7f2f2;
+  font-family: "Lora", serif;
+  margin-bottom: 1rem;
+}
+
+/* === Contact Section Overrides for Centering === */
+#contact {
+  grid-column: 1 / -1; /* Span all columns */
+  text-align: center;  /* Center text */
+}
+
+#contact .home-image-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%; /* Adjust as needed */
+}
+
+/* === Image Container === */
+.home-image-container {
+  display: block;
+  margin: 1rem auto;
+  max-width: 90%; /* change this to adjust image width */
+}
+
+.home-image-container img {
+  width: 100%; /* makes image fill container */
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+/* === Buttons === */
+.button {
+  background: rgb(19, 238, 84);
+  color: #333;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.button:hover {
+  background: #450ae6;
+  color: white;
+}
+
+/* === Forms === */
+form {
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: left;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.4rem;
+  border: 1px solid rgb(19, 238, 84);
+  border-radius: 4px;
+}
+
+form button {
+  background: #450ae6;
+  color: #333;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+form button:hover {
+  background: #3B6B35;
+  color: white;
+}
+
+/* === Footer === */
+footer {
+  background: #3B6B35;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9em;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #450ae6;
+}
+
+/* === Responsive === */
+@media (max-width: 600px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #3B6B35;
+    width: 100%;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: inline-block;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  main {
+    display: block;
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 900px) {
+}

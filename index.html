@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cedar Hollow Organics | Supporting Local Organic Farming</title>
+  <meta name="description" content="Cedar Hollow Organics is a certified organic farm offering CSA memberships, fresh produce boxes, and educational farm events." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header>
+    <h1>Cedar Hollow Organics</h1>
+    <nav>
+      <button class="menu-toggle" aria-label="Menu">&#9776;</button>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="csa.html">CSA</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Supporting Local Organic Farming</h2>
+  </section>
+
+  <!-- Main Content -->
+  <main>
+    <!-- About Us -->
+    <section id="about">
+      <h3>About Us</h3>
+      <div class="home-image-container">
+        <img src="images/about_us.jpeg" alt="Farmers tending to organic crops at Cedar Hollow Organics" />
+      </div>
+      <p>Our farm is built on a century of experience in sustainable agriculture and organic practices.</p>
+    </section>
+
+    <!-- Events & Education -->
+    <section id="events">
+      <h3>Farm Events & Education</h3>
+      <div class="home-image-container">
+        <img src="images/events.jpeg" alt="Community members attending a farm education event" />
+      </div>
+      <p>Attend hands-on workshops and seasonal events to learn about organic living.</p>
+    </section>
+
+    <!-- CSA Program -->
+    <section id="csa">
+      <h3>CSA Program</h3>
+      <div class="home-image-container">
+        <img src="images/csa_program.jpeg" alt="Basket of fresh produce for the Cedar Hollow CSA program" />
+      </div>
+      <p>Join our CSA for weekly fresh organic produce boxes.</p>
+      <a href="csa.html" class="button">Sign Up</a>
+    </section>
+
+    <!-- Weekly Harvest Box -->
+    <section id="harvest">
+      <h3>Weekly Harvest Box</h3>
+      <div class="home-image-container">
+        <img src="images/harvest_box.jpeg" alt="Weekly harvest box with assorted organic vegetables" />
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h3>Contact Us</h3>
+      <div class="home-image-container contact-home-image">
+        <img src="images/contact.jpeg" alt="Farmhouse exterior and organic farmland at Cedar Hollow Organics" />
+      </div>
+      <p>Email us at <a href="mailto:info@cedarholloworganics.com">info@cedarholloworganics.com</a></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Cedar Hollow Organics | Polk County, FL | 
+      Email <a href="mailto:info@cedarholloworganics.com">info@cedarholloworganics.com</a>
+    </p>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navList = document.querySelector('.nav-list');
+    menuToggle.addEventListener('click', () => {
+      navList.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
