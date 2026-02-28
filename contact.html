@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Cedar Hollow Organics</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Contact Cedar Hollow Organics to learn more about our farm, CSA program, or community events.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Cedar Hollow Organics</h1>
-    <nav>
-      <button class="menu-toggle" aria-label="Menu">&#9776;</button>
-      <ul class="nav-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="csa.html">CSA</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section class="contact-hero">
-    <h2>Contact Us</h2>
-  </section>
+<header>
+  <h1>Cedar Hollow Organics</h1>
+  <nav>
+    <button class="menu-toggle" aria-label="Menu">&#9776;</button>
+    <ul class="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="csa.html">CSA</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
+<section class="contact-hero">
+  <h2>Contact Us</h2>
+</section>
+
+<main>
   <section class="contact-form">
-    <p>We love hearing from our community! Send us a message below, and we’ll get back to you soon.</p>
+    <p>We’re always happy to connect with those who share our passion for local, sustainable food. Whether you have questions about our CSA program, want to schedule a tour, or are interested in farm events, our team is here to help.</p>
+
     <form>
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
@@ -39,20 +43,23 @@
 
       <button type="submit" class="button">Send Message</button>
     </form>
-  </section>
 
-  <footer>
-    <p>© 2026 Cedar Hollow Organics | Polk County, FL | 
+    <p style="text-align:center; margin-top:1rem;">
+      Or email us at 
       <a href="mailto:info@cedarholloworganics.com">info@cedarholloworganics.com</a>
     </p>
-  </footer>
+  </section>
+</main>
 
-  <script>
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navList = document.querySelector('.nav-list');
-    menuToggle.addEventListener('click', () => {
-      navList.classList.toggle('show');
-    });
-  </script>
+<footer>
+  <p>© 2026 Cedar Hollow Organics | Polk County, FL</p>
+</footer>
+
+<script>
+const menuToggle=document.querySelector('.menu-toggle');
+const navList=document.querySelector('.nav-list');
+menuToggle.addEventListener('click',()=>{navList.classList.toggle('show');});
+</script>
+
 </body>
 </html>
