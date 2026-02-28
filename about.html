@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About | Cedar Hollow Organics</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Learn how the Cedar family built a sustainable, organic farm over four generations.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Cedar Hollow Organics</h1>
-    <nav>
-      <button class="menu-toggle" aria-label="Menu">&#9776;</button>
-      <ul class="nav-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="csa.html">CSA</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section class="about-hero">
-    <h2>About Our Farm</h2>
-  </section>
+<header>
+  <h1>Cedar Hollow Organics</h1>
+  <nav>
+    <button class="menu-toggle" aria-label="Menu">&#9776;</button>
+    <ul class="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="csa.html">CSA</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
+<section class="about-hero">
+  <h2>About Our Farm</h2>
+</section>
+
+<main>
   <section class="about-content">
-    <p>Founded by Chrissy and Chad Cedar, Cedar Hollow Organics began as a small family plot over a century ago. Today, the farm thrives as a USDA-certified organic operation focused on healthy soils, biodiversity, and fresh local produce for our community.</p>
-    <p>Our mission is to provide organic, sustainably-grown food while educating others on the benefits of responsible farming.</p>
-    <img src="images/farm_family.jpeg" alt="The Cedar family working on their farm" />
+    <p>Cedar Hollow Organics began more than a century ago when the Cedar family first cultivated this land. What started as a small homestead has grown into a thriving organic farm shaped by hard work, innovation, and a deep commitment to the environment. Today, Chrissy and Chad Cedar continue the legacy as fourth‑generation farmers, dedicating their lives to organic, regenerative practices.</p>
+
+    <p>We focus on sustainable agriculture — nurturing healthy soil, preserving biodiversity, and using natural growing methods. Our produce is grown without synthetic pesticides, herbicides, or GMOs, ensuring the healthiest options for families who care about what they eat.</p>
+
+    <p>Our mission extends beyond farming: we offer tours, workshops, and community education events that teach the next generation about sustainability, nutrition, and the importance of local food systems.</p>
+
+    <div class="home-image-container">
+      <img src="images/farm_family.jpeg" alt="The Cedar family working on their organic farm together">
+    </div>
   </section>
+</main>
 
-  <footer>
-    <p>© 2026 Cedar Hollow Organics | Polk County, FL</p>
-  </footer>
+<footer>
+  <p>© 2026 Cedar Hollow Organics | Polk County, FL</p>
+</footer>
 
-  <script>
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navList = document.querySelector('.nav-list');
-    menuToggle.addEventListener('click', () => {
-      navList.classList.toggle('show');
-    });
-  </script>
+<script>
+const menuToggle=document.querySelector('.menu-toggle');
+const navList=document.querySelector('.nav-list');
+menuToggle.addEventListener('click',()=>{navList.classList.toggle('show');});
+</script>
+
 </body>
 </html>
