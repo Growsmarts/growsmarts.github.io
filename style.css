@@ -27,13 +27,14 @@ nav ul {
   display: flex;
   gap: 1rem;
   margin: 0;
+  padding: 0;
 }
 
 nav a {
   color: rgb(19, 238, 84);
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
@@ -94,8 +95,8 @@ nav a:hover {
 /* === Main Content Sections === */
 main {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
   padding: 3rem;
 }
 
@@ -104,36 +105,36 @@ main section {
   text-align: center;
 }
 
-main section h3 {
+main h3 {
   color: #f7f2f2;
   font-family: "Lora", serif;
   margin-bottom: 1rem;
-}
-
-/* === Contact Section Overrides for Centering === */
-#contact {
-  grid-column: 1 / -1; /* Span all columns */
-  text-align: center;  /* Center text */
-}
-
-#contact .home-image-container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 80%; /* Adjust as needed */
 }
 
 /* === Image Container === */
 .home-image-container {
   display: block;
   margin: 1rem auto;
-  max-width: 90%; /* change this to adjust image width */
+  max-width: 90%;
 }
 
 .home-image-container img {
-  width: 100%; /* makes image fill container */
+  width: 100%;
   height: auto;
   border-radius: 8px;
   display: block;
+}
+
+/* === Contact Section Overrides === */
+#contact {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+#contact .home-image-container {
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* === Buttons === */
@@ -144,6 +145,7 @@ main section h3 {
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
+  display: inline-block;
 }
 
 .button:hover {
@@ -175,7 +177,7 @@ form textarea {
 
 form button {
   background: #450ae6;
-  color: #333;
+  color: #ffffff;
   padding: 0.6rem 1.2rem;
   border: none;
   border-radius: 5px;
@@ -206,13 +208,14 @@ footer a:hover {
   color: #450ae6;
 }
 
-/* === Responsive === */
-@media (max-width: 600px) {
+/* === Responsive Navigation === */
+@media (max-width: 700px) {
   nav ul {
     display: none;
     flex-direction: column;
     background: #3B6B35;
     width: 100%;
+    padding: 1rem 0;
   }
 
   nav ul.show {
@@ -229,10 +232,13 @@ footer a:hover {
   }
 
   main {
+    padding: 1.5rem;
     display: block;
-    padding: 1rem;
   }
+  .events-list {
+  max-width: 700px;
+  margin: 1.5rem auto;
+  text-align: left;
+  padding-left: 1rem;
 }
-
-@media (min-width: 900px) {
 }
